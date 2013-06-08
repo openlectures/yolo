@@ -1,10 +1,10 @@
 class SeabTopicsController < ApplicationController
   before_action :set_seab_topic, only: [:show, :edit, :update, :destroy]
-
+  respond_to :json
   # GET /seab_topics
   # GET /seab_topics.json
   def index
-    @seab_topics = SeabTopic.all
+    respond_with SeabTopic.all
   end
 
   # GET /seab_topics/1

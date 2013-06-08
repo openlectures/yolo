@@ -34,15 +34,44 @@ In order of importance
 ]
 
 2. Add new checkpoint by taking JSON
-Tell me how you want me to give you a checkpoint. The JSON format. Information that I will have
+POST request sending you a String of the following format
 
-title
-description
-lecturer
-URL
-lesson
-topic
-seab
-subject
+[
+    {
+        "title": "title of the checkpoint",
+        "description": "description for the checkpoint",
+        "lecturer": "name of the lecturer",
+        "url": "YouTube URL of the checkpoint",
+        "lesson": "lesson that the checkpoint belongs to",
+        "topic": "topic that the checkpoint belongs to",
+        "seab": "seab_subtopic that the checkpoint belongs to",
+        "subject": "subject that the checkpoint belongs to"
+        "order": "numbering of the checkpoint within the LESSON"
+    },
+    {
+        "title": "title of the checkpoint",
+        "description": "description for the checkpoint",
+        "lecturer": "name of the lecturer",
+        "url": "YouTube URL of the checkpoint",
+        "lesson": "lesson that the checkpoint belongs to",
+        "topic": "topic that the checkpoint belongs to",
+        "seab": "seab_subtopic that the checkpoint belongs to",
+        "subject": "subject that the checkpoint belongs to"
+        "order": "numbering of the checkpoint within the LESSON"
 
-How to place the checkpoint and in what position in the lesson, topic, seab, subject, and how to handle new lessons, topics, seabs, subjects, i'll leave it to you.
+    },
+    {
+        "title": "title of the checkpoint",
+        "description": "description for the checkpoint",
+        "lecturer": "name of the lecturer",
+        "url": "YouTube URL of the checkpoint",
+        "lesson": "lesson that the checkpoint belongs to",
+        "topic": "topic that the checkpoint belongs to",
+        "seab": "seab_subtopic that the checkpoint belongs to",
+        "subject": "subject that the checkpoint belongs to"
+        "order": "numbering of the checkpoint within the LESSON"
+    }
+]
+If the
+- url
+already exists, reject the single duplicate object within the JSON.

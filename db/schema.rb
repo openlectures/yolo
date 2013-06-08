@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20130608154242) do
   end
 
   create_table "topics", force: true do |t|
+    t.string   "topic"
     t.integer  "subject_id"
     t.integer  "seab_sub_topic_id"
     t.text     "description"

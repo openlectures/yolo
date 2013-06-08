@@ -1,9 +1,12 @@
 <script type="text/x-handlebars" charset="utf-8">
+<ul>
+  <li>{{#linkTo 'home'}}Home{{/linkTo}}</li>
+  <li>{{#linkTo 'about'}}about{{/linkTo}}</li>
+  <li>{{#linkTo 'outreach'}}outreach{{/linkTo}}</li>
+  <li>{{#linkTo 'partners'}}partners{{/linkTo}}</li>
+  <li>{{#linkTo 'subjects'}}Subjects{{/linkTo}}</li>
+</ul>
 {{outlet}}
 </script>
 
-<script type="text/x-handlebars" charset="utf-8" data-template-name="subjects">
-{{#each subject in controller}}
-  {{subject.subject}}
-{{/each}}
-</script>
+<%= javascript_include_tag "templates/subjects" %>

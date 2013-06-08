@@ -1,7 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Subject.create(subject: "Economics")
+SeabTopic.create(subject_id: "1", topic: "Market System", description: "lol")
+SeabSubTopic.create(seab_topic_id: "1", topic: "Demand and Supply")
+Topic.create(subject_id:"1", seab_sub_topic_id: "1", topic: "Hello", description: "Hello")
+Lesson.create(topic_id: "1", lesson: "Supply Shifts", user_id: "1")
+Checkpoint.create(lesson_id: "1", checkpoint: "Supply checkpoint", description: "lolol", videourl: "yolourl", objective: "complete the yolo")

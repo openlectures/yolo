@@ -1,6 +1,7 @@
 class CreateTopics < ActiveRecord::Migration
   def change
     create_table :topics do |t|
+      t.string :topic
       t.integer :subject_id
       t.integer :seab_sub_topic_id
       t.text :description

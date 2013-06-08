@@ -1,15 +1,17 @@
 class SubjectsController < ApplicationController
+  respond_to :json
   before_action :set_subject, only: [:show, :edit, :update, :destroy]
 
   # GET /subjects
   # GET /subjects.json
   def index
-    @subjects = Subject.all
+    respond_with Subject.all
   end
 
   # GET /subjects/1
   # GET /subjects/1.json
   def show
+    respond_with Subject.find(params[:id])
   end
 
   # GET /subjects/new

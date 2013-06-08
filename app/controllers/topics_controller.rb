@@ -1,10 +1,8 @@
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
-
-  # GET /topics
-  # GET /topics.json
+  respond_to :json
   def index
-    @topics = Topic.all
+    respond_with Topic.all
   end
 
   # GET /topics/1
@@ -62,13 +60,11 @@ class TopicsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_topic
       @topic = Topic.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def topic_params
-      params.require(:topic).permit(:subject_id, :seab_sub_topic_id, :description)
+      params.require(:topic).permit(:subject_id, :seab_sub_topic_id, :description, :topic)
     end
 end

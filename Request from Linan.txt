@@ -1,15 +1,37 @@
 In order of importance
 1. JSON Output for all checkpoints
-{
-    "title": "title of the checkpoint",
-    "description": "description for the checkpoint",
-    "lecturer": "name of the lecturer",
-    "url": "YouTube URL of the checkpoint",
-    "lesson": "lesson that the checkpoint belongs to",
-    "topic": "topic that the checkpoint belongs to",
-    "seab": "seab_subtopic that the checkpoint belongs to",
-    "subject": "subject that the checkpoint belongs to"
-}
+[
+    {
+        "title": "title of the checkpoint",
+        "description": "description for the checkpoint",
+        "lecturer": "name of the lecturer",
+        "url": "YouTube URL of the checkpoint",
+        "lesson": "lesson that the checkpoint belongs to",
+        "topic": "topic that the checkpoint belongs to",
+        "seab": "seab_subtopic that the checkpoint belongs to",
+        "subject": "subject that the checkpoint belongs to"
+    },
+    {
+        "title": "title of the checkpoint",
+        "description": "description for the checkpoint",
+        "lecturer": "name of the lecturer",
+        "url": "YouTube URL of the checkpoint",
+        "lesson": "lesson that the checkpoint belongs to",
+        "topic": "topic that the checkpoint belongs to",
+        "seab": "seab_subtopic that the checkpoint belongs to",
+        "subject": "subject that the checkpoint belongs to"
+    },
+    {
+        "title": "title of the checkpoint",
+        "description": "description for the checkpoint",
+        "lecturer": "name of the lecturer",
+        "url": "YouTube URL of the checkpoint",
+        "lesson": "lesson that the checkpoint belongs to",
+        "topic": "topic that the checkpoint belongs to",
+        "seab": "seab_subtopic that the checkpoint belongs to",
+        "subject": "subject that the checkpoint belongs to"
+    }
+]
 
 2. Add new checkpoint by taking JSON
 Tell me how you want me to give you a checkpoint. The JSON format. Information that I will have

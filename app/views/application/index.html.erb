@@ -1,3 +1,9 @@
 <script type="text/x-handlebars" charset="utf-8">
-  Hello World
+{{outlet}}
+</script>
+
+<script type="text/x-handlebars" charset="utf-8" data-template-name="subjects">
+{{#each subject in controller}}
+  {{subject.subject}}
+{{/each}}
 </script>

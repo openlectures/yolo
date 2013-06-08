@@ -1,3 +1,4 @@
-YOLo.Router.map (match)->
-  # match('/').to('index')
+YOLo.Router.map ->
+  @route "subjects",
+    path: ''
 

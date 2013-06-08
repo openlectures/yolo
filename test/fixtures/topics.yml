@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject_id: 1
+  seab_sub_topic_id: 1
+  description: MyText
+
+two:
+  subject_id: 1
+  seab_sub_topic_id: 1
+  description: MyText

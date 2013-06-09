@@ -15,3 +15,7 @@ YOLo.Router.map ->
     path: '/subjects'
   @route "subject",
     path: '/subjects/:subject_id'
+  @route "topic",
+    path: '/topics/:topic_id'
+  @route "lesson",
+    path: '/lessons/:lesson_id'

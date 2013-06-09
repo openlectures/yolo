@@ -5,9 +5,8 @@ class TopicsController < ApplicationController
     respond_with Topic.all
   end
 
-  # GET /topics/1
-  # GET /topics/1.json
   def show
+    respond_with Topic.find(params[:id])
   end
 
   # GET /topics/new

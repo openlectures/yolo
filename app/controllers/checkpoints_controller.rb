@@ -9,7 +9,7 @@ class CheckpointsController < ApplicationController
   # GET /checkpoints
   # GET /checkpoints.json
   def index
-    @checkpoints = Checkpoint.all
+    respond_with Checkpoint.all
   end
 
   # GET /checkpoints/1

@@ -1,4 +1,5 @@
 YOLo.Lesson = DS.Model.extend
   lesson: DS.attr('string')
-  topicId: DS.attr('number')
+  topic: DS.belongsTo('YOLo.Topic')
+  checkpoints: DS.hasMany('YOLo.Checkpoint')
   userId: DS.attr('number')

@@ -3,3 +3,4 @@ YOLo.Topic = DS.Model.extend
   description: DS.attr('string')
   subject: DS.belongsTo('YOLo.Subject')
   seab_sub_topics: DS.belongsTo('YOLo.SeabSubTopic')
+  lessons: DS.hasMany('YOLo.Lesson')

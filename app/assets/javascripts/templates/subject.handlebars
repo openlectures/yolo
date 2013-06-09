@@ -1,13 +1,6 @@
-{{model.id}} - {{model.subject}}
+Topics: <br>
+{{partial "topics"}}
 
-Topics:
-{{#each topic in model.topics}}
-{{topic.topic}}
-{{/each}}
-End Topics
+Seab Topics: <br>
+{{partial "seab_topics"}}
 
-Seab Topics:
-{{#each seab_topic in model.seab_topics}}
-{{seab_topic.topic}}
-{{/each}}
-End Seab Topics

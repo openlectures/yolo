@@ -1,15 +1,13 @@
 class LessonsController < ApplicationController
+  respond_to :json
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
 
-  # GET /lessons
-  # GET /lessons.json
   def index
-    @lessons = Lesson.all
+    respond_with Lesson.all
   end
 
-  # GET /lessons/1
-  # GET /lessons/1.json
   def show
+    respond_with Lesson.find(params[:id])
   end
 
   # GET /lessons/new

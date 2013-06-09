@@ -1,8 +1,9 @@
 class CheckpointsController < ApplicationController
   before_action :set_checkpoint, only: [:show, :edit, :update, :destroy]
-
+  respond_to :json
   def feed
     @checkpoints = Checkpoint.all
+    render json: @checkpoints, root: false, each_serializer: CheckpointFeedSerializer
   end
 
   # GET /checkpoints

@@ -17,6 +17,8 @@ end
 group :doc do
   gem 'sdoc', require: false
 end
+
+gem 'neat'
 gem 'bourbon'
 
 gem 'ember-rails'

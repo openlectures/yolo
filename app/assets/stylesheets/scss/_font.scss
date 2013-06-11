@@ -4,8 +4,8 @@
 // @include font-face('Miso','fonts/Miso/Miso-Light',100);
 
 // Replace the above when porting to Rails
-@include font-face(Miso,'Miso-Regular',$asset-pipeline: true);
-@include font-face(Miso,'Miso-Bold',bold,$asset-pipeline: true);
+// @include font-face(Miso,'Miso-Regular',$asset-pipeline: true);
+// @include font-face(Miso,'Miso-Bold',bold,$asset-pipeline: true);
 @include font-face(Miso,'Miso-Light',100,$asset-pipeline: true);
 
 .font--miso {
@@ -19,8 +19,8 @@
 
 // Replace the above when porting to Rails
 @include font-face(Concrete,'Concrete-Regular',$asset-pipeline: true);
-@include font-face(Concrete,'Concrete-Bold',bold,$asset-pipeline: true);
-@include font-face(Concrete,'Concrete-Italic',italic,$asset-pipeline: true);
+// @include font-face(Concrete,'Concrete-Bold',bold,$asset-pipeline: true);
+// @include font-face(Concrete,'Concrete-Italic',italic,$asset-pipeline: true);
 
 .font--concrete {
   font-family: 'Concrete', $georgia;

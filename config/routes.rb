@@ -1,4 +1,5 @@
 YOLo::Application.routes.draw do
+  devise_for :users, controllers: {sessions: "sessions"}
   resources :lessons, defaults: {format: :json}
   resources :topics, defaults: {format: :json}
   resources :seab_sub_topics, defaults: {format: :json}

@@ -20,8 +20,7 @@ end
 
 gem 'neat'
 gem 'bourbon'
-gem 'devise', github: "plataformatec/devise", branch: "rails4"
-gem 'ember-auth-rails'
+
 gem 'ember-rails'
 gem 'ember-source', '1.0.0.rc5'
 gem 'handlebars-source', '1.0.0.rc4'

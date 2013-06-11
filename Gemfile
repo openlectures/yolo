@@ -17,6 +17,7 @@ end
 group :doc do
   gem 'sdoc', require: false
 end
+gem 'bourbon'
 
 gem 'ember-rails'
 gem 'ember-source', '1.0.0.rc5'

@@ -36,7 +36,7 @@ namespace :db do
       cp.checkpoint = Faker::Lorem.word
       cp.lesson_id = [1..100].sample()
       cp.description = Faker::Lorem.paragraph
-      cp.videourl = Faker::Lorem.word
+      cp.videourl = "http://www.youtube.com/embed/G4VAdWJXyFk"
       cp.objective = Faker::Lorem.sentence
     end
   end

@@ -15,6 +15,7 @@ class CheckpointsController < ApplicationController
   # GET /checkpoints/1
   # GET /checkpoints/1.json
   def show
+    respond_with Checkpoint.find(params[:id])
   end
 
   # GET /checkpoints/new

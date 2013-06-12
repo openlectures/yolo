@@ -1,12 +1,15 @@
 <script type="text/x-handlebars" charset="utf-8">
-<ul>
-  <li>{{#linkTo 'home'}}Home{{/linkTo}}</li>
-  <li>{{#linkTo 'about'}}about{{/linkTo}}</li>
-  <li>{{#linkTo 'outreach'}}outreach{{/linkTo}}</li>
-  <li>{{#linkTo 'partners'}}partners{{/linkTo}}</li>
-  <li>{{#linkTo 'subjects'}}Subjects{{/linkTo}}</li>
-</ul>
+<nav>
+	<ul>
+	  <li>{{#linkTo 'home'}}Home{{/linkTo}}</li>
+	  <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+	  <li>{{#linkTo 'outreach'}}Outreach{{/linkTo}}</li>
+	  <li>{{#linkTo 'partners'}}Partners{{/linkTo}}</li>
+	  <li>{{#linkTo 'subjects'}}Subjects{{/linkTo}}</li>
+	</ul>
+</nav>
+<br>
 {{outlet}}
 </script>
 
-<%= javascript_include_tag "templates/subjects" %>
+<%= javascript_include_tag "templates/all" %>

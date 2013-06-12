@@ -21,6 +21,7 @@ end
 gem 'neat'
 gem 'bourbon'
 
+gem 'devise', git: "https://github.com/plataformatec/devise.git", branch: "rails4"
 gem 'ember-rails'
 gem 'ember-source', '1.0.0.rc5'
 gem 'handlebars-source', '1.0.0.rc4'

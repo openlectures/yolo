@@ -1,13 +1,20 @@
 <script type="text/x-handlebars" charset="utf-8">
-<nav>
+<div class="container">
+<center>
+<%=image_tag "logo.svg"%>
+</center>
+<header class="header">
+<nav class="site-nav">
 	<ul>
 	  <li>{{#linkTo 'home'}}Home{{/linkTo}}</li>
 	  <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+	  <li>{{#linkTo 'subjects' class="learn"}}Learn{{/linkTo}}</li>
 	  <li>{{#linkTo 'outreach'}}Outreach{{/linkTo}}</li>
 	  <li>{{#linkTo 'partners'}}Partners{{/linkTo}}</li>
-	  <li>{{#linkTo 'subjects'}}Subjects{{/linkTo}}</li>
 	</ul>
 </nav>
+</header>
+</div>
 <br>
 {{outlet}}
 </script>

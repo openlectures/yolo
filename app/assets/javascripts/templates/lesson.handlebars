@@ -1,1 +1,11 @@
-{{partial "checkpoints"}}
+<section class="generic">
+  <h1><center>{{unbound model.lesson}}<center></h1>
+    <article>
+      <ol>
+        {{#each checkpoint in model.checkpoints}}
+          <li>{{#linkTo "checkpoint" checkpoint}}{{checkpoint.checkpoint}}{{/linkTo}}</li>
+        {{/each}}
+      </ol>
+    </article>
+</section>
+

@@ -1,1 +1,10 @@
-{{partial "lessons"}}
+<section class="generic">
+  <h1><center>{{unbound model.topic}}<center></h1>
+    <article>
+      <ol>
+        {{#each lesson in model.lessons}}
+          <li>{{#linkTo "lesson" lesson}}{{lesson.lesson}}{{/linkTo}}</li>
+        {{/each}}
+      </ol>
+    </article>
+</section>

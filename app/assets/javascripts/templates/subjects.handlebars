@@ -1,3 +1,14 @@
-{{#each subject in controller}}
-  {{#linkTo 'subject' subject}}{{subject.subject}}{{/linkTo}}
-{{/each}}
+<section>
+  <aside>
+    <img src="/assets/subjects.svg" alt="" width="100%" />
+  </aside>
+  <article>
+    <h1>What do you want to learn today?</h1>
+    <ul>
+      {{#each subject in controller}}
+        <li>{{#linkTo 'subject' subject}}{{subject.subject}}{{/linkTo}}</li>
+      {{/each}}
+    </ul>
+  </article>
+</section>
+

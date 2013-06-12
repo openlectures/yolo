@@ -4,3 +4,4 @@ YOLo.Checkpoint = DS.Model.extend
   description: DS.attr('string')
   videourl: DS.attr('string')
   objective: DS.attr('string')
+  youtube_url: DS.attr('string')

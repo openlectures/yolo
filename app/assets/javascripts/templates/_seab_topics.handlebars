@@ -1,5 +1,7 @@
+<h2>SEAB syllabus</h2>
 <ul>
 {{#each seab_topic in model.seab_topics}}
-<li>{{seab_topic.topic}}</li>
+<li><strong>{{seab_topic.topic}}</strong></li>
+<small>{{seab_topic.description}}</small>
 {{/each}}
 </ul>

@@ -1,4 +1,6 @@
 YOLo::Application.routes.draw do
+  resources :users, defaults: {format: :json}
+
   resources :lessons, defaults: {format: :json}
   resources :topics, defaults: {format: :json}
   resources :seab_sub_topics, defaults: {format: :json}

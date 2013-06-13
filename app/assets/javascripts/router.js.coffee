@@ -21,3 +21,7 @@ YOLo.Router.map ->
     path: '/lessons/:lesson_id'
   @route "checkpoint",
     path: '/checkpoints/:checkpoint_id'
+  @route "users",
+  	path: "/users"
+  @route "user",
+  	path: '/users/:user_id'

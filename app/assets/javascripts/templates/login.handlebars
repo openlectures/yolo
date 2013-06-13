@@ -1,6 +1,9 @@
-{{#if isLoggedIn}}
-Logged in
+{{#if currentUser.isSignedIn}}
+{{currentUser.email}}
+<button {{action "logout"}}>Log Out</button>
 {{else}}
-login pls
+
+{{view Ember.TextField valueBinding="email" placeholder="email"}}
+{{view Ember.TextField valueBinding="password" placeholder="password"}}
 <button {{action "login"}}>Log In</button>
 {{/if}}

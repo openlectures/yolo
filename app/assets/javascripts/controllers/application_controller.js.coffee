@@ -1,4 +1,7 @@
 YOLo.ApplicationController = Em.ObjectController.extend
-	isLoggedIn: false,
+	email: null,
+	password: null,
 	login: ->
-		@set('isLoggedIn', true)
+		YOLo.Session.createRecord({email: @get('email'), password: @get('password')}).save()
+	logout: ->
+		$.get('/sign_out');

@@ -1,4 +1,6 @@
 YOLo::Application.routes.draw do
+  match "/sign_out", to: "sessions#destroy", via: :get
+  resources :sessions, defaults: {format: :json}
   resources :users, defaults: {format: :json}
 
   resources :lessons, defaults: {format: :json}

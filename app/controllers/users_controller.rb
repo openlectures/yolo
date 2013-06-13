@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   # GET /users
   def index
-    @users = User.all
+    respond_with User.all
   end
 
   # GET /users/1

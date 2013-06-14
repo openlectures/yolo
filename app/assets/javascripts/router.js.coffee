@@ -25,3 +25,7 @@ YOLo.Router.map ->
   	path: "/users"
   @route "user",
   	path: '/users/:user_id'
+  @resource "sessions", ->
+    @route "new"
+    @route "destroy"
+

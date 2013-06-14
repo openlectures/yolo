@@ -3,7 +3,6 @@ YOLo.Session = DS.Model.extend
 	password: DS.attr('string')
 	
 	didCreate: ->
-		alert("Logged In!")
-		
+
 	didError: ->
 		alert("WOOPS PLEASE TRY AGAIN")

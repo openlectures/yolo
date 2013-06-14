@@ -1,9 +1,8 @@
 {{#if currentUser.isSignedIn}}
-{{currentUser.email}}
-<button {{action "logout"}}>Log Out</button>
+  {{currentUser.email}}
+  {{#linkTo "sessions.destroy"}}Log Out{{/linkTo}}
 {{else}}
-
-{{view Ember.TextField valueBinding="email" placeholder="email"}}
-{{view Ember.TextField valueBinding="password" placeholder="password"}}
-<button {{action "login"}}>Log In</button>
+  {{view Ember.TextField valueBinding="email" placeholder="email"}}
+  {{view Ember.TextField valueBinding="password" placeholder="password"}}
+  <button {{action "login"}}>Log In</button>
 {{/if}}
